@@ -4,35 +4,22 @@ module.exports = function () {
     'nodeInfos': [
       {
         'name': 'Clientstatistik',
-        'href': 'https://regensburg.freifunk.net/netz/statistik/node/{NODE_ID}/',
-        'image': 'https://grafana.regensburg.freifunk.net/render/d-solo/000000026/node?panelId=1&var-node={NODE_ID}&from=now-7d&width=650&height=350&theme=light&_t={TIME}',
+        'href': 'https://statistik.freifunk-troisdorf.de/render/d-solo/oUBqc1Wmk/nodes?orgId=1&var-hostname={NODE_NAME}&refresh=10s&panelId=2&theme=light&width=1000&height=500&tz=UTC%2B02%3A00',
+        'image': 'https://statistik.freifunk-troisdorf.de/render/d-solo/oUBqc1Wmk/nodes?orgId=1&var-hostname={NODE_NAME}&refresh=10s&panelId=2&theme=light&width=1000&height=500&tz=UTC%2B02%3A00',
         'title': 'Knoten {NODE_ID} - weiteren Statistiken'
       },
       {
-        'name': 'Trafficstatistik',
-        'href': 'https://regensburg.freifunk.net/netz/statistik/node/{NODE_ID}/',
-        'image': 'https://grafana.regensburg.freifunk.net/render/d-solo/000000026/node?panelId=2&from=now-7d&var-node={NODE_ID}&width=650&height=350&theme=light&_t={TIME}',
+        'name': 'Traffic',
+        'href': 'https://statistik.freifunk-troisdorf.de/render/d-solo/oUBqc1Wmk/nodes?orgId=1&var-hostname={NODE_NAME}&refresh=10s&panelId=3&theme=light&width=1000&height=500&tz=UTC%2B02%3A00',
+        'image': 'https://statistik.freifunk-troisdorf.de/render/d-solo/oUBqc1Wmk/nodes?orgId=1&var-hostname={NODE_NAME}&refresh=10s&panelId=3&theme=light&width=1000&height=500&tz=UTC%2B02%3A00',
         'title': 'Knoten {NODE_ID} - weiteren Statistiken'
-      },
-      {
-        'name': 'Airtime',
-        'href': 'https://regensburg.freifunk.net/netz/statistik/node/{NODE_ID}/',
-        'image': 'https://grafana.regensburg.freifunk.net/render/d-solo/000000026/node?panelId=5&from=now-7d&var-node={NODE_ID}&width=650&height=350&theme=light&_t={TIME}',
-        'title': 'Knoten {NODE_ID} - weiteren Statistiken'
-      }
-    ],
-    'linkInfos': [
-      {
-        'name': 'Statistik für alle Links zwischen diese Knoten',
-        'image': 'https://grafana.regensburg.freifunk.net/render/d-solo/000000026/node?panelId=7&var-node={SOURCE_ID}&var-nodetolink={TARGET_ID}&from=now-7d&&width=650&height=350&theme=light&_t={TIME}',
-        'title': 'Linkstatistik des letzten Tages, min und max aller Links zwischen diesen Knoten'
       }
     ],
     // Array of data provider are supported
     'dataPath': [
-      'https://regensburg.freifunk.net/data/'
+      'https://tst.hoffmann-hosting.de/data/'
     ],
-    'siteName': 'Freifunk Regensburg',
+    'siteName': 'TST Besucher Map',
     'mapLayers': [
       {
         'name': 'Freifunk Regensburg',
@@ -54,7 +41,7 @@ module.exports = function () {
           'subdomains': '1234',
           'attribution': ' <a href="http://www.openmaptiles.org/" target="_blank">&copy; OpenMapTiles</a> <a href="http://www.openstreetmap.org/about/" target="_blank">&copy; OpenStreetMap contributors</a>',
           'mode': 'night',
-          'start': 19,
+          'start': 23,
           'end': 7
         }
       },
@@ -100,23 +87,27 @@ module.exports = function () {
     'fixedCenter': [
       // Northwest
       [
-        49.3522,
-        11.7752
+        50.8428,
+        7.0367
       ],
       // Southeast
       [
-        48.7480,
-        12.8917
+        50.7768,
+        7.1919
       ]
     ],
     'siteNames': [
       {
-        'site': 'ffrgb-bat15',
-        'name': 'Regensburg'
+        'site': 'tdf',
+        'name': 'Troisdorf All'
       },
       {
-        'site': 'ffrgb',
-        'name': 'Regensburg'
+        'site': 'inn',
+        'name': 'Innenstadt'
+      },
+      {
+        'site': 'flu',
+        'name': 'Soziale Einrichtungen'
       }
     ]
   };
