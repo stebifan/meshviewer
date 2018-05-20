@@ -1,10 +1,10 @@
 {
   "node": {
-    "all": "Alle Knoten",
-    "nodes": "Knoten",
+    "all": "Alle Bereiche",
+    "nodes": "Bereiche",
     "uptime": "Laufzeit",
     "links": "Verbindungen",
-    "clients": "Nutzer",
+    "clients": "Besucher",
     "distance": "Entfernung",
     "connectionType": "Verbindungsart",
     "tq": "Übertragungsqualität",
@@ -14,7 +14,7 @@
     "deactivated": "deaktiviert",
     "status": "Status",
     "firmware": "Firmware-Version",
-    "hardware": "Geräte-Modell",
+    "hardware": "Ort",
     "visible": "Auf der Karte sichtbar",
     "update": "Auto-Update",
     "site": "Site",
